@@ -1,0 +1,140 @@
+*{
+    text-align: justify;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bg-image{
+    margin-top: 0px;
+    width: 100vw;
+    height: 100vh;
+    padding-top: 2rem;
+    
+}
+#header{
+    background-color:black;
+    height: 7rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    border-radius:5rem;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-size: x-large;
+    background-color: black;
+}
+#registration-system{
+    display: flex;
+    gap: rem;
+    padding: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+#student-registration{
+    background-color:rgba(184, 182, 182, 0.7);
+    height: 28rem;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5rem;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+}
+#registration-details{
+    background-color:rgba(184, 182, 182, 0.4);
+    height: 28rem;
+    width: 58vw;
+    border-radius:5rem ;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    overflow:auto;
+    display:grid;
+    padding: 3rem;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.4);
+
+}
+#studentForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size:larger;
+    gap: 0.5rem;
+}
+input {
+    width: 18rem;
+    height: 2rem;
+    border-radius: .7rem;
+    padding: 1rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+
+}
+button{
+    border-radius: 0.3rem;
+    width: 5rem;
+    height: 2rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+button:active{
+    transform:scale(0.9);
+}
+tbody{
+    color: darkblue;
+
+
+}
+.editButton{
+    background-color: rgb(10, 10, 134);
+    margin: 2px;
+}
+.deleteButton{
+    background-color: rgb(135, 11, 11);
+    margin: 2px;
+}
+.copyright{
+    margin: 3rem;
+    text-align: center;
+}
+@media (max-width:380px){
+    #header{height:4rem;border-radius: 15px;}
+    .title{font-size:small;}
+    #registration-system{flex-direction: column;gap: 20px;}
+    #student-registration{height: 28rem; width: 17rem; border-radius: 15px;}
+    #registration-details{ height: 28rem; width: 17rem; border-radius: 15px;overflow: auto; font-size:smaller;}
+    input {width: 13rem; height: 1.5rem;}
+}
+@media (min-width:380px) and (max-width:460px){
+    #header{height:5rem;}
+    .title{font-size:large;}
+    #registration-system{flex-direction: column;gap: 20px;}
+    #student-registration{height: 28rem; width: 23rem; }
+    #registration-details{ height: 28rem; width: 23rem; overflow: auto; font-size:smaller;}
+    input {width: 13rem; height: 1.5rem;}
+}
+@media (min-width:460px) and (max-width:768px){
+    #header{height:5rem;}
+    .title{font-size:x-large;}
+    #registration-system{flex-direction: column;gap: 20px;}
+    #student-registration{height: 28rem; width: 40rem; }
+    #registration-details{ height: 28rem; width: 40rem; overflow: auto; font-size:smaller;}
+    input {width: 13rem; height: 1.5rem;}
+}
+@media (min-width:1000px) and (max-width:1400px){
+    #header{height:5rem;}
+    .title{font-size:large;}
+    #registration-system{gap: 2px;}
+    #student-registration{height: 28rem; width: 25rem; }
+    #registration-details{ height: 28rem; width: 33rem; overflow: auto; font-size:smaller;}
+    input {width: 13rem; height: 1.5rem;}
+}

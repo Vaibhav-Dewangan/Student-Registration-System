@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="type" content="Student Registration System">
+    <meta name="audience" content="Student">
+    <meta name="Age" content="below 25 years">
+    <title>Student Registration System</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body class= "bg-image" style="background-image: url('image/bg-image.jpg');">
+    <header id="header"><!--Header-->
+        <h1 class="title">Student Registration System</h1>
+    </header>
+    <main id="registration-system"><!-- Parent div for regstration system -->
+        <div id="student-registration"><!-- Child div for regstration system containing form -->
+            <form action="" id="studentForm">
+                <input type="text" id="name" placeholder="Student Name" name="name" required >
+                <input type="text" id="studentId" placeholder="Student Id" name="Studentid" required>
+                <input type="tel" maxlength="10" id="contact" placeholder="Contact" name="contact" required >
+                <input type="email" id="email" placeholder="Email Id" name="email" required>
+                <button type="submit" id="submit">Register</button>
+            </form>
+        </div>
+        <div id="registration-details"><!-- Child div for regstration system containing registration details  -->
+           <table id="studentTable">
+            <thead>
+                <th>Student Name <hr></th>
+                <th>Student ID <hr></th>
+                <th>Contact <hr></th>
+                <th>Email ID <hr></th>
+            </thead>
+            <tbody>
+             <!--Student data will be added through javascript -->
+            </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">© [2024]  [Student Registration System]. All rights reserved. This website are protected by copyright law. "</p>
+    </footer>
+</body>
+</html>
